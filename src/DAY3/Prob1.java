@@ -80,7 +80,8 @@ public class Prob1 {
                     if(half1.charAt(j) == half2.charAt(i)){
                         if(!alredyAdded.contains(half1.charAt(j))){
                             value = map.get(half1.charAt(j));
-                            times.replace(half1.charAt(j) , value, value +1);
+                            total = total + value;
+                            alredyAdded.add(half1.charAt(j));
                         }
    
                     }
